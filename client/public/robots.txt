@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# API endpoints niet indexeren
+Disallow: /api/
+
+# Sitemap
 Sitemap: https://www.labelenlens.nl/sitemap.xml
+
+# Crawl-delay voor respectvol crawlen
+Crawl-delay: 1

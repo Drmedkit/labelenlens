@@ -132,6 +132,36 @@ export function Footer() {
               >
                 Energielabel Amsterdam
               </Link>
+              <Link
+                href="/energielabel-kosten"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Energielabel kosten
+              </Link>
+              <Link
+                href="/energielabel-woning"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Energielabel woning
+              </Link>
+              <Link
+                href="/energielabel-huurwoning"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Energielabel huurwoning
+              </Link>
+              <Link
+                href="/energielabel-verplicht"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Energielabel verplicht
+              </Link>
+              <Link
+                href="/energielabel-verbeteren"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Energielabel verbeteren
+              </Link>
             </nav>
           </div>
 
@@ -175,7 +205,19 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-card-border text-center text-sm text-muted-foreground">
+        {/* Stadsdelen Amsterdam */}
+        <div className="mt-8 pt-6 border-t border-card-border">
+          <h4 className="font-semibold mb-3 text-sm">Energielabel per stadsdeel</h4>
+          <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            <Link href="/energielabel-amsterdam-centrum" className="text-muted-foreground hover:text-foreground transition-colors">Centrum</Link>
+            <Link href="/energielabel-amsterdam-zuid" className="text-muted-foreground hover:text-foreground transition-colors">Zuid</Link>
+            <Link href="/energielabel-amsterdam-west" className="text-muted-foreground hover:text-foreground transition-colors">West</Link>
+            <Link href="/energielabel-amsterdam-oost" className="text-muted-foreground hover:text-foreground transition-colors">Oost</Link>
+            <Link href="/energielabel-amsterdam-noord" className="text-muted-foreground hover:text-foreground transition-colors">Noord</Link>
+          </nav>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-card-border text-center text-sm text-muted-foreground">
           <p data-testid="text-footer-copyright">
             © {new Date().getFullYear()} Label & Lens. Alle rechten voorbehouden.
           </p>
